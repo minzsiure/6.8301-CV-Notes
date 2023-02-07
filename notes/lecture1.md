@@ -1,5 +1,5 @@
 # Lecture 1 Introduction, Simple Vision System
-
+[toc]
 ## 1. Blocks World
 * A world composed of a very simple set of objects.
 * The simple objects are composed of *flat* surfaces which can be horizontal or vertical, resting on a white horizontal ground plane.
