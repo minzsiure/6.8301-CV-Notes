@@ -57,7 +57,7 @@ $$ x = X$$ $$ y = cos(\theta)Y - sin(\theta) Z$$
 
 
 ### B) Extract edges from images
-* Idea: direction of the gradient indicates a larger variation of intensities, ie.direction is perpendicular to the edge when we are on top of an edge.
+* **Idea**: direction of the gradient indicates a larger variation of intensities, ie.direction is perpendicular to the edge when we are on top of an edge.
 * We measure degree of variation of image $I(x,y)$, aka $$\nabla I = (\frac{\partial I}{\partial x}, \frac{\partial I}{\partial y})$$
 * Since pixels are discrete, we make approximation $$\frac{\partial I}{\partial x} \backsimeq I(x,y)-I(x-1,y)$$ $$\frac{\partial I}{\partial y} \backsimeq I(x,y)-I(x,y-1)$$
 
