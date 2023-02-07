@@ -26,15 +26,17 @@
 
 
 ## 3. A Simple Goal
-* Map world coordinate $$(X,Y,Z)$$ to image coordinate $$(x,y)$$.
+* Map world coordinate $(X,Y,Z)$ to image coordinate $(x,y)$.
 
-<div style="text-align:center;">
+$$ x = X$$ $$ y = cos(\theta)Y - sin(\theta) Z$$
+
+<!-- <div style="text-align:center;">
     <img src="https://i.imgur.com/aFN0mWc.png" width="300">
-</div>
+</div> -->
 
 * **Goal:** (reverse direction) Recover world coordinates of all the pixels seen by the camera.
 * Other things to consider: 
-    * Recover actual color of the surface seen by each pixel $$(x,y)$$ by discounting illumination effects; because the color of the pixel is a combination of the surface albedo and illumination (color of the light sources + inter-reflections).
+    * Recover actual color of the surface seen by each pixel $(x,y)$ by discounting illumination effects; because the color of the pixel is a combination of the surface albedo and illumination (color of the light sources + inter-reflections).
 
 
 
@@ -56,7 +58,7 @@
 
 ### B) Extract edges from images
 * Idea: direction of the gradient indicates a larger variation of intensities, ie.direction is perpendicular to the edge when we are on top of an edge.
-* We measure degree of variation of image $$I(x,y)$$, aka $$\nabla I = (\frac{\partial I}{\partial x}, \frac{\partial I}{\partial y})$$
+* We measure degree of variation of image $I(x,y)$, aka $$\nabla I = (\frac{\partial I}{\partial x}, \frac{\partial I}{\partial y})$$
 * Since pixels are discrete, we make approximation $$\frac{\partial I}{\partial x} \backsimeq I(x,y)-I(x-1,y)$$ $$\frac{\partial I}{\partial y} \backsimeq I(x,y)-I(x,y-1)$$
 
 
@@ -67,7 +69,7 @@
 
 
 ### D) Procedures
-* Decide which pixels correspond to edges by thresholding the edge strength $$E(x,y)$$.
+* Decide which pixels correspond to edges by thresholding the edge strength $E(x,y)$.
 
 
 
