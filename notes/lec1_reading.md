@@ -1,4 +1,4 @@
-# Reading 1: Introduction, Simple Vision System
+# 6.8301 Reading 1: Introduction, Simple Vision System
 [toc]
 ## 1. Blocks World
 * A world composed of a very simple set of objects.
